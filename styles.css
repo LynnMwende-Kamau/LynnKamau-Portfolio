@@ -1,0 +1,75 @@
+/* Root Theme Colors */
+:root {
+  --primary: #0b3c5d;
+  --secondary: #328cc1;
+  --accent: #d9b310;
+  --light: #f4f4f4;
+  --dark: #1d1d1d;
+}
+
+/* Basic Layout */
+body {
+  font-family: Arial, sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Section Styling */
+section {
+  padding: 2rem;
+  margin: auto;
+  max-width: 800px;
+}
+
+.project {
+  border: 1px solid var(--secondary);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: white;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid var(--secondary);
+  border-radius: 4px;
+}
+
+button {
+  background: var(--accent);
+  border: none;
+  padding: 0.7rem;
+  color: white;
+  cursor: pointer;
+}
+
