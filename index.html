@@ -1,92 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lynn Mwende Kamau - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lynn Kamau | Software Engineer</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <header>
-    <h1>Lynn Mwende Kamau</h1>
-    <p>Software Developer | Web Development & UX | AI Enthusiast</p>
+
+  <!-- Loading Animation -->
+  <div id="loader">
+    <div class="spinner"></div>
+    <p>System booting: Portfolio by Lynn Mwende Kamau</p>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container fade-in">
+      <img src="images/Profile.jpg" alt="Lynn Kamau Profile" class="profile-pic" />
+      <h1>Lynn Mwende Kamau</h1>
+      <p>Advanced Software Engineer & Trainer</p>
+    </div>
   </header>
 
+  <!-- Navigation -->
   <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#education">Education</a>
-    <a href="#certifications">Certifications</a>
     <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <main class="container">
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="fade-in">
       <h2>About Me</h2>
-      <p>I’m Lynn Mwende Kamau, a passionate software engineer based in Nairobi. I love solving problems with clean, maintainable code and sharing knowledge as a developer trainer.</p>
+      <p>I’m Lynn Kamau, a passionate web developer and trainer from Nairobi. I enjoy building clean, creative, and functional software with a modern touch.</p>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" class="fade-in">
       <h2>Programming Languages</h2>
       <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Python, PHP</li>
-        <li>SQL, MySQL, PostgreSQL</li>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>PHP</li>
       </ul>
     </section>
 
-    <!-- Education Section -->
-    <section id="education">
+    <!-- Education -->
+    <section id="education" class="fade-in">
       <h2>Education</h2>
-      <p>BSc in Applied Computer Technology from USIU-Africa</p>
-      <a href="assets/Lynn_Kamau_CV.pdf" download>Download My CV</a>
+      <p>BSc in Applied Computer Technology, USIU-Africa</p>
+      <a href="assets/Lynn Mwende Kamau CV.pdf" download="Lynn_Kamau_CV.pdf">Download My CV</a>
+
     </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications">
-      <h2>Certifications</h2>
-      <ul>
-        <li>ALX Africa – AI Starter Kit (2025)</li>
-        <li>CompTIA Career Skills (2025)</li>
-        <li>Power Learn Project – Software Development Certificate (2025)</li>
-        <li>Code Kenya – Web Development Internship Certificate</li>
-      </ul>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
+    <!-- Projects -->
+    <section id="projects" class="fade-in">
       <h2>Projects</h2>
-      <div class="projects">
+      <div class="projects-grid">
         <div class="project">
-          <h3><a href="https://github.com/LynnKamau/Skoocafe-Cafeteria-Order-Delivery-System" target="_blank">Skoocafe</a></h3>
-          <p>A responsive cafeteria ordering system (PHP/HTML/CSS) with admin dashboard and performance‑focused validation logic.</p>
+          <img src="images/Skoocafe.jpg" alt="Skoocafe Project Screenshot" />
+          <h3>Skoocafe – Cafeteria Order Delivery System</h3>
+          <p><strong>Tech Stack:</strong> PHP, HTML, CSS</p>
+          <p>Built and deployed a cafeteria ordering system with real-time updates and customer management. Ensured performance and security with structured backend logic.</p>
+          <a href="https://github.com/LynnKamau/Skoocafe-Cafeteria-Order-Delivery-System" target="_blank">View on GitHub</a>
         </div>
+
         <div class="project">
-          <h3><a href="https://github.com/LynnKamau/PeNuCare" target="_blank">PeNuCare</a></h3>
-          <p>Electronic pediatric care system (PHP/HTML/CSS/JS) featuring user authentication, data encryption, and notification workflows.</p>
+          <img src="images/Penucare.png" alt="PeNuCare Project Screenshot" />
+          <h3>PeNuCare – Pediatric Nursing Care Management</h3>
+          <p><strong>Tech Stack:</strong> PHP, HTML, CSS, JavaScript</p>
+          <p>Designed a web app for pediatric records and workflows. Delivered secure, scalable care documentation and reporting for healthcare teams.</p>
+          <a href="https://github.com/LynnKamau/PeNuCare" target="_blank">View on GitHub</a>
         </div>
+
         <div class="project">
-          <h3><a href="https://github.com/LynnKamau/InnoLibraries" target="_blank">InnoLibraries</a></h3>
-          <p>Full‑stack library management app (Django REST & Vue.js) with search, role‑based access control, and optimized backend endpoints.</p>
+          <img src="images/Innolibraries.png" alt="InnoLibraries Project Screenshot" />
+          <h3>InnoLibraries – Library System</h3>
+          <p><strong>Tech Stack:</strong> Django, Vue.js</p>
+          <p>Developed an innovative library management system integrating a Vue.js frontend with Django backend. Optimized UX and system performance.</p>
+          <a href="https://github.com/LynnKamau/InnoLibraries" target="_blank">View on GitHub</a>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
+    <!-- Certifications -->
+    <section id="certifications" class="fade-in">
+      <h2>Certifications</h2>
+      <ul>
+        <li>ALX AI Starter Kit</li>
+        <li>CompTIA Career Skills</li>
+        <li>Power Learn Project</li>
+        <li>Code Kenya Certificate</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="fade-in">
       <h2>Contact Me</h2>
-      <form action="https://formspree.io/f/your-form-id" method="POST">
+      <form action="https://formspree.io/f/xwpbddwy" method="POST">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
 
         <button type="submit">Send Message</button>
       </form>
@@ -95,23 +123,35 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Lynn Mwende Kamau</p>
+    <p>Connect with me:</p>
     <div class="social-icons">
-      <a href="https://x.com/LynnMwendeKamau" target="_blank" aria-label="Twitter">
-        <!-- Twitter/X SVG -->
-        <a href="https://x.com/LynnMwendeKamau" target="_blank" aria-label="Twitter">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="335 350 330 276" width="20" height="20" fill="currentColor"><path d="M630,425 A195,195 0 0 1 331,600 A142,142 0 0 0 428,570 A70,70 0 0 1 370,523 A70,70 0 0 0 401,521 A70,70 0 0 1 344,455 A70,70 0 0 0 372,460 A70,70 0 0 1 354,370 A195,195 0 0 0 495,442 A67,67 0 0 1 611,380 A117,117 0 0 0 654,363 A65,65 0 0 1 623,401 A117,117 0 0 0 662,390 A65,65 0 0 1 630,425 Z"/>
-      </svg>
-      </a>
+      <!-- GitHub -->
       <a href="https://github.com/LynnKamau" target="_blank" aria-label="GitHub">
-        <!-- GitHub SVG -->
-        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 0.5C5.37 0.5 0 5.87 0 12.5C0 17.63 3.44 22.02 8.21 23.5C8.82 23.59 9.04 23.24 9.04 22.94C9.04 22.66 9.03 21.9 9.02 20.97C5.67 21.69 4.97 19.59 4.97 19.59C4.43 18.2 3.66 17.87 3.66 17.87C2.55 17.17 3.75 17.18 3.75 17.18C4.97 17.26 5.6 18.42 5.6 18.42C6.7 20.3 8.46 19.76 9.2 19.45C9.31 18.7 9.61 18.2 9.95 17.89C7.24 17.58 4.39 16.52 4.39 11.77C4.39 10.43 4.85 9.36 5.62 8.53C5.5 8.22 5.1 6.95 5.73 5.29C5.73 5.29 6.73 4.94 9.03 6.59C9.96 6.34 10.96 6.21 11.96 6.21C12.96 6.21 13.96 6.34 14.89 6.59C17.18 4.94 18.18 5.29 18.18 5.29C18.81 6.95 18.41 8.22 18.29 8.53C19.07 9.36 19.52 10.43 19.52 11.77C19.52 16.53 16.65 17.57 13.93 17.88C14.38 18.27 14.78 19.06 14.78 20.29C14.78 22.03 14.76 23.38 14.76 23.94C14.76 24.24 14.97 24.6 15.59 24.5C20.36 23.02 24 17.63 24 12.5C24 5.87 18.63 0.5 12 0.5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path fill="currentColor"
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.26.82-.577v-2.26c-3.338.725-4.033-1.61-4.033-1.61-.546-1.385-1.333-1.754-1.333-1.754-1.09-.745.082-.73.082-.73 1.205.086 1.84 1.238 1.84 1.238 1.07 1.835 2.807 1.305 3.495.998.107-.775.42-1.305.763-1.605-2.665-.3-5.466-1.335-5.466-5.93 0-1.31.467-2.38 1.235-3.22-.123-.303-.535-1.523.117-3.176 0 0 1.005-.322 3.3 1.23a11.5 11.5 0 0 1 3-.405c1.02.005 2.045.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.655 1.653.243 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.435.375.81 1.102.81 2.222v3.293c0 .32.21.697.825.577C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z" />
+        </svg>
       </a>
+
+      <!-- LinkedIn -->
       <a href="https://www.linkedin.com/in/lynn-kamau/" target="_blank" aria-label="LinkedIn">
-        <!-- LinkedIn SVG -->
-        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8.999H5V24H0V8.999zM7.5 9H12V11H12.07C12.8 9.84 14.22 9 15.83 9C20.17 9 20 12.34 20 16.25V24H15V17.09C15 15.33 14.97 13.11 12.65 13.11C10.3 13.11 10 15.04 10 17.03V24H5V8.999H7.5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path fill="currentColor"
+            d="M100.28 448H7.4V148.9h92.88zm-46.44-341C24.35 107 0 82.65 0 53.72A53.72 53.72 0 0 1 53.84 0c29.68 0 53.84 24.35 53.84 53.72 0 29.67-24.16 53.72-53.84 53.72zM447.9 448h-92.68V302.4c0-34.7-12.44-58.4-43.56-58.4-23.74 0-37.88 16-44.08 31.44-2.26 5.5-2.82 13.2-2.82 20.9V448h-92.76s1.24-270.5 0-298.1h92.76v42.3c12.33-19 34.46-46 83.74-46 61.14 0 106.94 39.9 106.94 125.5z" />
+        </svg>
+      </a>
+
+      <!-- Twitter -->
+      <a href="https://x.com/LynnMwendeKamau" target="_blank" aria-label="Twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path fill="currentColor"
+            d="M370.6 64H456l-144.9 168L488 448H366.8l-98.5-115.1L153.3 448H56L210.6 269.8 24 64h126.6l90.5 104.6L370.6 64zM343 400h41.4L172 112H128l215 288z" />
+        </svg>
       </a>
     </div>
+    <p>&copy; 2025 Lynn Kamau. All rights reserved.</p>
   </footer>
+
 </body>
+
 </html>
